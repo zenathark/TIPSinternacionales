@@ -1,3 +1,16 @@
-header class="listitem listitem-1 clearfix"
-    div onClick="window.location='http://www.secotrade.puebla.gob.mx/';" class="container _container clearfix"
-      img class="image" src="/images/sedeco.png"
+header class="nav-bar"
+  .bar-container
+  - if page.parent 
+    paper-icon-button class="button" src="{{ "/images/arrow.png" | prepend: site.baseurl }}" onclick="setTimeout(function() {window.location='{{ "/" | append: page.parent_url | prepend: site.baseurl }}' }, 250)"
+  .title
+    | {{page.title}}
+  img class="logo" src="{{ "/images/sedeco.png" | prepend: site.baseurl }}"
+.page-banner
+  - if page.banner
+    sass:
+      .page-banner
+        background-image: url('{{"/" | append: page.banner | prepend: site.baseurl }}')
+        background-size: cover
+        height: 164px
+        margin-top: 60px
+        background-position: center top

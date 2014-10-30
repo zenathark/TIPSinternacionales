@@ -1,2 +1,14 @@
 .item
-  p  {{include.item}}
+  div
+    {% if include.target_url %}
+      paper-button onclick="setTimeout(function() {window.location='{{ "/" | append: include.target_url | prepend: site.baseurl }}'}, 300)"
+        img src="{{ "/images/" | prepend: site.baseurl | append: include.icon }}"
+        .label
+          || {{ include.name }}
+    {% endif %}
+    {% if include.output_url %}
+      paper-button onclick="setTimeout(function() {window.location='{{ include.output_url }}'}, 300)"
+        img src="{{ "/images/" | prepend: site.baseurl | append: include.icon }}"
+        .label
+          || {{ include.name }}
+    {% endif %}

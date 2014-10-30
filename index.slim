@@ -1,21 +1,12 @@
 ---
-title: Países
+title: Inicio
 layout: default
+parent: False
+parent_url: index.html
+banner: "images/viaje.jpg"
 ---
-
-div class="home"
-  div onClick="window.location='pais/alemania/';" class="listitem listitem-2 clearfix"
-    div class="container _element container-2"
-    p class="pais" Alemania
-  div onClick="window.location='pais.html';" class="listitem listitem-3 clearfix"
-    div class="container _element container-3"
-    p class="pais" Brasil
-  div onClick="window.location='pais.html';" class="listitem listitem-4 clearfix"
-    div class="container _element container-4"
-    p class="pais" Estados Unidos
-  div onClick="window.location='pais.html';" class="listitem listitem-5 clearfix"
-    div class="container _element container-5"
-    p class="pais" España
-  div onClick="window.location='pais.html';" class="listitem listitem-6 clearfix"
-    div class="container _element container-6"
-    p class="pais" Francia
+{% include item_list.slim name="Alemania" icon="germany.png" target_url="content/germany/" %}
+{% include item_list.slim name="Brasil" icon="Brazil.png" target_url="content/brazil/" %}
+{% include item_list.slim name="Estados Unidos" icon="USA.png" target_url="content/usa/" %}
+{% include item_list.slim name="España" icon="Spain.png" target_url="content/spain/" %}
+{% include item_list.slim name="Francia" icon="France.png" target_url="content/france/" %}
