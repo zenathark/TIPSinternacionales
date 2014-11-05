@@ -15,7 +15,7 @@
 
 /* line 14, ../_sass/_typography.sass */
 .font_headline, .nav-bar .title {
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 200;
   line-height: 69px;
@@ -168,4 +168,24 @@ th {
 /* line 93, ../_sass/main.sass */
 table {
   margin: 25px;
+}
+
+/* line 96, ../_sass/main.sass */
+.footer {
+  display: block;
+  margin-top: 10px;
+}
+/* line 100, ../_sass/main.sass */
+.footer a img {
+  margin-left: 15px;
+  height: 50px;
+}
+/* line 103, ../_sass/main.sass */
+.footer .footer-comce {
+  float: right;
+  margin-right: 15px;
+}
+/* line 107, ../_sass/main.sass */
+.footer .footer-comce a img {
+  height: 50px;
 }
