@@ -4,7 +4,8 @@ header class="nav-bar"
     paper-icon-button class="button" src="{{ "/images/arrow.png" | prepend: site.baseurl }}" onclick="setTimeout(function() {window.location='{{ "/" | append: page.parent_url | prepend: site.baseurl }}' }, 250)"
   .title
     | {{page.title}}
-  img class="logo" src="{{ "/images/sedeco.png" | prepend: site.baseurl }}"
+  a href="http://www.secotrade.puebla.gob.mx"
+    img class="logo" src="{{ "/images/sedeco.png" | prepend: site.baseurl }}"
 .page-banner
   - if page.banner
     sass:
